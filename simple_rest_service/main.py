@@ -22,4 +22,5 @@ def wait_and_echo(echo_string: str, q: Optional[str] = None):
     wait_for = randrange(5)
     print(f"Waiting for {wait_for} seconds")
     sleep(wait_for)
-    return echo(echo_string, prefix=f"waited {wait_for}, then echoed: ")
+    echoed = echo(echo_string)
+    return {'echoed': echoed, 'waited': wait_for}
