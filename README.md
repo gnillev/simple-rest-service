@@ -1,2 +1,4 @@
 # simple-rest-service
-Simple rest service in using fastapi
+Simple rest service in python using fastapi
+
+(Learning project)
