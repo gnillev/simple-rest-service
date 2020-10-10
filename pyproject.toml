@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-rest-service"
+version = "0.1.0"
+description = "Simple rest service"
+authors = ["Mathias Nisted Velling <mnvdk0@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.61.1"
+uvicorn = "^0.12.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.1"
+flake9 = "^3.8.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
