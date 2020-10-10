@@ -9,6 +9,6 @@ app = FastAPI()
 
 
 @app.get("/echo/{echo_string}")
-def echo(echo_string: str, q: Optional[str] = None):
-    print(f"echo_string called with query params {q}")
+def echo_string(echo_string: str, q: Optional[str] = None):
+    print(f"echo_string called with echo string {echo_string} and query params {q}")
     return echo(echo_string)
